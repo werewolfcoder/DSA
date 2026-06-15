@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
@@ -11,19 +12,22 @@ int main() {
 #endif
 
     // Your code here
-    
-    int k,w;
-    long n;
-    cin>>k>>n>>w;
-    long totalCost = k*(w*(w+1)/2);
-    if(n>=totalCost)
+    int num,times;
+    cin>>num>>times;
+
+    while(times>0)
     {
-        cout<<0;
+        if(num%10==0)
+        {
+            num/=10;
+        }
+        else
+        {
+            num--;
+        }
+        times--;
     }
-    else
-    {
-    cout<<totalCost-n;
-    
-    }
+    cout<<num;
+
     return 0;
 }
