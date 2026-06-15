@@ -1,0 +1,13 @@
+# Compiled executables
+*.exe
+*.out
+*.o
+
+# Java class files
+*.class
+
+# VS Code
+.vscode/
+
+# Temporary files
+*.log
